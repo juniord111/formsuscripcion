@@ -1,0 +1,276 @@
+// Variables
+$font-family: 'Roboto', sans-serif;
+$primary-color: hsl(234, 29%, 20%);
+$secondary-color: hsl(235, 18%, 26%);
+$error-color: hsl(4, 100%, 67%);
+$white: white;
+$border-radius: 10px;
+
+// Global styles
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $secondary-color;
+  font-size: 16px;
+}
+
+p, button, ul, li {
+  font-weight: 400;
+  color: $secondary-color;
+}
+
+h1, h2 {
+  font-weight: 700;
+  font-size: 50px;
+  color: $primary-color;
+}
+
+// Form container
+.form-conatiner {
+  width: 52%;
+  height: 70%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Text and List
+.text {
+  width: 50%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+
+
+  p {
+    margin-top: -20px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: -40px;
+    margin-top: -20px;
+
+    li {
+      display: flex;
+      margin-top: 20px;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// Form elements
+.form {
+  margin-top: 10px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  color: $secondary-color;
+  font-size: 11px;
+
+  p {
+    display: none;
+    color: $error-color;
+  }
+}
+
+#email {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: $border-radius;
+}
+
+input.error {
+  border: 1px solid $error-color;
+  color: $error-color;
+}
+
+// Submit button
+.submit {
+  padding: 15px;
+  width: 100%;
+  background-color: $primary-color;
+  border: 1px solid $white;
+  color: $white;
+  font-weight: bold;
+  border-radius: $border-radius;
+}
+
+// Image
+.imagen {
+  width: 50%;
+}
+
+.img-desktop {
+  width: 400px;
+  height: 480px;
+}
+
+.img-movil {
+  display: none;
+}
+
+// Oculto modal
+.oculto {
+  display: none;
+  position: fixed;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding-left: 50px;
+  padding-bottom: 50px;
+
+  p {
+    width: 90%;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  span {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.dismiss {
+  padding: 15px;
+  width: 90%;
+  background-color: $primary-color;
+  font-weight: bold;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+// Media Queries for mobile responsiveness
+@media (max-width: 780px) {
+  body {
+    height: auto;
+    background-color: white;
+  }
+
+  .form-conatiner {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 120px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .text {
+    width: 100%;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+  }
+
+  .imagen {
+    width: 100%;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
+  .img-movil {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+
+  .text h1 {
+    font-size: 130px;
+  }
+
+  .text p {
+    margin-top: -10px;
+  }
+
+  .text ul {
+    list-style-type: none;
+    margin-left: -40px;
+    margin-top: -5px;
+    font-size: 50px;
+  }
+
+  .labelEmail {
+    font-size: 40px;
+  }
+
+  .label p {
+    font-size: 40px;
+    margin-top: 2px;
+    margin-right: 100px;
+  }
+
+  #email {
+    width: 80%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-radius: $border-radius;
+    font-size: 40px;
+  }
+
+  .submit {
+    padding: 50px;
+    width: 92%;
+    font-size: 40px;
+  }
+
+  .oculto {
+    width: 100%;
+    height: 100%;
+    padding-left: 70px;
+    padding-bottom: 0;
+  }
+
+  .oculto img {
+    margin-top: 200px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .oculto h2 {
+    font-size: 100px;
+  }
+
+  .oculto p {
+    margin-bottom: 30px;
+    font-size: 45px;
+  }
+
+  .dismiss {
+    padding: 50px;
+    width: 90%;
+    margin-top: 450px;
+    font-size: 40px;
+  }
+}
