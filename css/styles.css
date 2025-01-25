@@ -23,7 +23,7 @@ h1, h2 {
 
 .form-conatiner {
   width: 52%;
-  height: 70%;
+  height: 65%;
   background-color: white;
   padding: 20px;
   border: 1px solid #ddd;
@@ -99,7 +99,7 @@ input.error {
 }
 
 .img-desktop {
-  width: 400px;
+  width: 350px;
   height: 480px;
 }
 
