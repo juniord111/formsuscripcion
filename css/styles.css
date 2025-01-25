@@ -23,7 +23,7 @@ h1, h2 {
 
 .form-conatiner {
   width: 52%;
-  height: 68%;
+  height: auto;
   background-color: white;
   padding: 20px;
   border: 1px solid #ddd;
