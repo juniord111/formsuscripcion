@@ -33,7 +33,7 @@ h1, h2 {
 // Form container
 .form-conatiner {
   width: 52%;
-  height: 65%;
+  height: 68%;
   background-color: white;
   padding: 20px;
   border: 1px solid #ddd;
@@ -167,7 +167,7 @@ input.error {
 }
 
 // Media Queries for mobile responsiveness
-@media (max-width: 780px) {
+@media (max-width: 850px) {
   body {
     height: auto;
     background-color: white;
