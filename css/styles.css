@@ -153,13 +153,13 @@ input.error {
     padding: 20px;
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 120px;
     border: none;
     box-shadow: none;
+    margin-bottom: 70px;
   }
   .text {
     width: 100%;
-    margin-left: 25px;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
     font-size: 50px;
@@ -176,60 +176,61 @@ input.error {
     height: 50%;
   }
   .text h1 {
-    font-size: 130px;
+    font-size: 60px;
   }
   .text p {
     margin-top: -10px;
+    font-size: 20px;
   }
   .text ul {
     list-style-type: none;
     margin-left: -40px;
     margin-top: -5px;
-    font-size: 50px;
+    font-size: 16px;
   }
   .labelEmail {
-    font-size: 40px;
+    font-size: 15px;
   }
   .label p {
-    font-size: 40px;
+    font-size: 15px;
     margin-top: 2px;
-    margin-right: 100px;
+    margin-right: 20px;
   }
   #email {
     width: 80%;
-    padding: 50px;
-    margin-bottom: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 15px;
   }
   .submit {
-    padding: 50px;
-    width: 92%;
-    font-size: 40px;
+    padding: 20px;
+    width: 95%;
+    font-size: 16px;
   }
   .oculto {
     width: 100%;
     height: 100%;
-    padding-left: 70px;
+    padding-left: 50px;
     padding-bottom: 0;
   }
   .oculto img {
-    margin-top: 200px;
-    width: 150px;
-    height: 150px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
   }
   .oculto h2 {
-    font-size: 100px;
+    font-size: 50px;
   }
   .oculto p {
     margin-bottom: 30px;
-    font-size: 45px;
+    font-size: 16px;
   }
   .dismiss {
-    padding: 50px;
+    padding: 20px;
     width: 90%;
-    margin-top: 450px;
-    font-size: 40px;
+    margin-top: 40px;
+    font-size: 20px;
   }
 }
 
